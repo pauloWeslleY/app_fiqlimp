@@ -1,5 +1,6 @@
-import { Flex, Container, Heading, Stack, Text } from '@chakra-ui/react';
-import { IlustratorSvg } from './HeroSvg.jsx';
+import { Flex, Container, Heading, Stack, Text, Image } from '@chakra-ui/react';
+// import { IlustratorSvg } from './HeroSvg.jsx';
+import Banner2 from './../../assets/product_4.jpg';
 import styles from './styles.module.scss';
 
 export const Hero = () => {
@@ -27,11 +28,18 @@ export const Hero = () => {
                   your meetings and receive smart reminders in appropriate
                   times. Read your smart “Daily Agenda” every morning.
                </Text>
-               <Flex w={'full'}>
-                  <IlustratorSvg
+               <Flex alignItems={'center'}>
+                  <Image
+                     align={'center'}
+                     w={400}
+                     objectFit="cover"
+                     src={Banner2}
+                     alt=""
+                  />
+                  {/* <IlustratorSvg
                      height={{ sm: '24rem', lg: '28rem' }}
                      mt={{ base: 12, sm: 16 }}
-                  />
+                  /> */}
                </Flex>
             </Stack>
          </Container>
