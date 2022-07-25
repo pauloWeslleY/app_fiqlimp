@@ -1,6 +1,9 @@
 import { Navigation } from './../../components/Navigation/Nagivation';
 import { NavBar } from './../../components/Navigation/NavBar';
-import { Hero } from '../../components/Hero/Hero';
+import { Hero } from './../../components/Hero/Hero';
+import { Action } from './../../components/Action/Action';
+import { Main } from './../../components/Main/Main';
+import { Footer } from './../../components/Footer/Footer';
 
 import styles from './home.module.scss';
 
@@ -9,8 +12,10 @@ const Home = () => {
       <main className={styles.main__home}>
          <NavBar />
          <Navigation />
-         <h1>Home</h1>
          <Hero />
+         <Action />
+         <Main />
+         <Footer />
       </main>
    );
 };
