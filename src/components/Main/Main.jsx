@@ -28,7 +28,9 @@ const Feature = ({ text, icon, iconBg }) => {
          >
             {icon}
          </Flex>
-         <Text fontWeight={600}>{text}</Text>
+         <Text fontSize={'1rem'} fontWeight={600}>
+            {text}
+         </Text>
       </Stack>
    );
 };

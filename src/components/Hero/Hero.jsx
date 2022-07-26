@@ -23,7 +23,7 @@ export const Hero = () => {
                      made easy
                   </Text>
                </Heading>
-               <Text color={'gray.500'} maxW={'3xl'}>
+               <Text fontSize={'1rem'} color={'gray.500'} maxW={'3xl'}>
                   Never miss a meeting. Never be late for one too. Keep track of
                   your meetings and receive smart reminders in appropriate
                   times. Read your smart “Daily Agenda” every morning.

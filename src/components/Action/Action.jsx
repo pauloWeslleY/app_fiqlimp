@@ -74,6 +74,7 @@ export const Action = () => {
                            py={3}
                            border="solid transparent"
                            fontWeight="bold"
+                           fontSize={'1rem'}
                            rounded="md"
                            _light={{
                               color: 'white',
@@ -102,6 +103,7 @@ export const Action = () => {
                            py={3}
                            border="solid transparent"
                            fontWeight="bold"
+                           fontSize={'1rem'}
                            rounded="md"
                            color="brand.600"
                            bg="orange.500"

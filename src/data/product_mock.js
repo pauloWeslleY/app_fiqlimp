@@ -6,19 +6,19 @@ import Product4 from './../assets/product_4.jpg';
 export const products = [
    {
       id: 1,
-      name: "Vassoura Gary Plus",
+      name: "Gary Plus Broom",
       image: Product1,
       price: 8.55
    },
    {
       id: 2,
-      name: "Desentupidor de Pia Sanfonado",
+      name: "Sanfonado Sink Plunger",
       image: Product2,
       price: 5.10
    },
    {
       id: 3,
-      name: "Lava Onibus Base Madeira",
+      name: "Lava Bus Wood Base",
       image: Product3,
       price: 6.50
    },

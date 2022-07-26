@@ -45,9 +45,11 @@ export const NavBar = () => {
                bg={'transparent'}
             />
             <HStack spacing={8}>
-               <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-                  App FiqLimp
-               </chakra.h1>
+               <Box>
+                  <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
+                     App FiqLimp
+                  </chakra.h1>
+               </Box>
                <HStack
                   as={'nav'}
                   spacing={4}
