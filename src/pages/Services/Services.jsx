@@ -1,10 +1,12 @@
-import { Navigation } from '../../components/Navigation/Nagivation';
+import { NavBar } from './../../components/Navigation/NavBar';
+import { Footer } from './../../components/Footer/Footer';
 
 const Services = () => {
    return (
       <>
-         <Navigation />
+         <NavBar />
          <h1>Services</h1>
+         <Footer />
       </>
    );
 };

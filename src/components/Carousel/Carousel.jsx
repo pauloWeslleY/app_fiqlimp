@@ -1,5 +1,12 @@
 import { useState } from 'react';
 import { Flex, Box, Stack, HStack, Text, Image } from '@chakra-ui/react';
+import {
+   Image1,
+   Image4,
+   Image5,
+   Image6,
+   Image13,
+} from './../../data/image_mock';
 
 export const Carousel = () => {
    const arrowStyles = {
@@ -22,31 +29,31 @@ export const Carousel = () => {
    };
    const slides = [
       {
-         img: 'https://images.pexels.com/photos/2599537/pexels-photo-2599537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+         img: Image1,
          label: 'First Slide',
          description:
             'Nulla vitae elit libero, a pharetra augue mollis interdum.',
       },
       {
-         img: 'https://images.pexels.com/photos/2714581/pexels-photo-2714581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+         img: Image6,
          label: 'Second Slide',
          description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       },
       {
-         img: 'https://images.pexels.com/photos/2878019/pexels-photo-2878019.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
+         img: Image13,
          label: 'Third Slide',
          description:
             'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
       },
       {
-         img: 'https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+         img: Image4,
          label: 'Fourth Slide',
          description:
             'Nulla vitae elit libero, a pharetra augue mollis interdum.',
       },
       {
-         img: 'https://images.pexels.com/photos/3124111/pexels-photo-3124111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+         img: Image5,
          label: 'Fifth Slide',
          description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -73,7 +80,7 @@ export const Carousel = () => {
    };
    return (
       <Flex w="full" pos="relative" overflow="hidden">
-         <Flex h="400px" w="full" {...carouselStyle}>
+         <Flex h="100vh" w="full" {...carouselStyle}>
             {slides.map((slide, sid) => (
                <Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
                   <Text

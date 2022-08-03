@@ -1,12 +1,15 @@
-import { Navigation } from '../../components/Navigation/Nagivation';
+import { NavBar } from './../../components/Navigation/NavBar';
+import { Footer } from './../../components/Footer/Footer';
+import { ContentAbout } from '../../components/Content/Content';
 
 const About = () => {
    return (
       <>
-         <Navigation />
-         <h1>About</h1>
+         <NavBar />
+
+         <ContentAbout />
+         <Footer />
       </>
    );
 };
-
 export default About;

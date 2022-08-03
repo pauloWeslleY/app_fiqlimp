@@ -1,12 +1,15 @@
 import { Box, Heading, Text, useBreakpointValue } from '@chakra-ui/react';
-import { Navigation } from './../../components/Navigation/Nagivation';
+import { NavBar } from './../../components/Navigation/NavBar';
 import { Carousel } from '../../components/Carousel/Carousel';
 import { CardCarousel } from './../../components/Card/CardCarousel';
+import { ProductList } from './../../components/Product/ProductList';
+import { StatsDescription } from './../../components/Statics/Statics';
+import { Footer } from './../../components/Footer/Footer';
 
 const Product = () => {
    return (
       <section>
-         <Navigation />
+         <NavBar />
          <Carousel />
          <Box align={'center'}>
             <Heading
@@ -32,6 +35,9 @@ const Product = () => {
             </Heading>
          </Box>
          <CardCarousel />
+         <ProductList />
+         <StatsDescription />
+         <Footer />
       </section>
    );
 };
