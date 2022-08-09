@@ -1,7 +1,7 @@
 import { ListItem, ListIcon } from '@chakra-ui/react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
-// import { BiPhone } from 'react-icons/bi';
+import { BiPhone } from 'react-icons/bi';
 import styles from './styles.module.scss';
 
 export const ContactListItem = () => {
@@ -21,18 +21,18 @@ const ContactList = ({ name, icon }) => {
 };
 
 const props_contact = [
-   // {
-   //    id: 1,
-   //    icon: BiPhone,
-   //    name: '11 99845-6754',
-   // },
    {
       id: 1,
+      icon: BiPhone,
+      name: '+55 11 99845-6754',
+   },
+   {
+      id: 2,
       icon: GoLocation,
       name: 'R. Amauri Souza, 346',
    },
    {
-      id: 2,
+      id: 3,
       icon: AiOutlineMail,
       name: 'contato@fiqlimp.com',
    },

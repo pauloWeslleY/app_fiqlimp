@@ -4,17 +4,19 @@ import {
    Container,
    Stack,
    Text,
-   useColorModeValue,
    VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import { getNavLink } from './../Navigation/NavLink';
+import { useColor } from './../../hooks/useColor';
 import { Logo } from './Logo';
 
 const SocialButton = ({ children, label, href }) => {
+   const { background_footer_button, background_footer_button_hover } =
+      useColor();
    return (
       <chakra.button
-         bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+         bg={background_footer_button}
          rounded={'full'}
          w={8}
          h={8}
@@ -26,7 +28,7 @@ const SocialButton = ({ children, label, href }) => {
          justifyContent={'center'}
          transition={'background 0.3s ease'}
          _hover={{
-            bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+            bg: background_footer_button_hover,
          }}
       >
          <VisuallyHidden>{label}</VisuallyHidden>
@@ -36,11 +38,10 @@ const SocialButton = ({ children, label, href }) => {
 };
 
 export const Footer = () => {
+   const { background__footer, bg__color_footer, border__color_footer } =
+      useColor();
    return (
-      <Box
-         bg={useColorModeValue('gray.50', 'gray.900')}
-         color={useColorModeValue('gray.700', 'gray.200')}
-      >
+      <Box bg={background__footer} color={bg__color_footer}>
          <Container
             as={Stack}
             maxW={'6xl'}
@@ -58,7 +59,7 @@ export const Footer = () => {
          <Box
             borderTopWidth={1}
             borderStyle={'solid'}
-            borderColor={useColorModeValue('gray.200', 'gray.700')}
+            borderColor={border__color_footer}
          >
             <Container
                as={Stack}
@@ -72,10 +73,10 @@ export const Footer = () => {
                <Text>© 2022 App FiqLimp. All rights reserved</Text>
                <Stack direction={'row'} spacing={6}>
                   <SocialButton label={'Twitter'} href={'#'}>
-                     <FaTwitter />
+                     <FaFacebook />
                   </SocialButton>
-                  <SocialButton label={'YouTube'} href={'#'}>
-                     <FaYoutube />
+                  <SocialButton label={'WhatsApp'} href={'#'}>
+                     <FaWhatsapp />
                   </SocialButton>
                   <SocialButton label={'Instagram'} href={'#'}>
                      <FaInstagram />

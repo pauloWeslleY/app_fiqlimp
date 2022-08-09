@@ -1,6 +1,5 @@
 import { Flex, Container, Heading, Stack, Text, Image } from '@chakra-ui/react';
-// import { IlustratorSvg } from './HeroSvg.jsx';
-import Banner2 from './../../assets/product_4.jpg';
+import { Banner2 } from './../../data/image_mock';
 import styles from './styles.module.scss';
 
 export const Hero = () => {
@@ -34,12 +33,8 @@ export const Hero = () => {
                      w={400}
                      objectFit="cover"
                      src={Banner2}
-                     alt=""
+                     alt="Banner do Site"
                   />
-                  {/* <IlustratorSvg
-                     height={{ sm: '24rem', lg: '28rem' }}
-                     mt={{ base: 12, sm: 16 }}
-                  /> */}
                </Flex>
             </Stack>
          </Container>

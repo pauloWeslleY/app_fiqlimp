@@ -12,18 +12,22 @@ import { SiWhatsapp } from 'react-icons/si';
 import { NavBar } from './../../components/Navigation/NavBar';
 import { Footer } from './../../components/Footer/Footer';
 import { ContactListItem } from './ContactList';
-
 import { Image10 } from './../../data/image_mock';
 
 import styles from './styles.module.scss';
 
 const Contact = () => {
+   const icons = <SiWhatsapp />;
+   const link = 'https://web.whatsapp.com/';
+
+   const getLink = () => window.open(link);
+
    return (
       <section>
          <NavBar />
 
          <Container maxW={'5xl'}>
-            <SimpleGrid minChildWidth={'120px'} spacing={'40px'} py={'2rem'}>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} py={'1.5rem'}>
                <Flex
                   justifyContent={'center'}
                   flexDirection={'column'}
@@ -36,12 +40,12 @@ const Contact = () => {
                   >
                      Entre em contato com a gente!
                   </Heading>
-                  <Box className={styles.hero__contact}>
+                  <Box className={styles.list__content}>
                      <List spacing={'2rem'}>{ContactListItem()}</List>
                   </Box>
                   <Box py={'2rem'}>
                      <Button
-                        leftIcon={<SiWhatsapp />}
+                        leftIcon={icons}
                         colorScheme="teal"
                         variant="solid"
                         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
@@ -54,6 +58,7 @@ const Contact = () => {
                            transform: 'scale(0.98)',
                            borderColor: '#bec3c9',
                         }}
+                        onClick={getLink}
                      >
                         WhatsApp
                      </Button>

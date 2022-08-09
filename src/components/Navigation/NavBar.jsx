@@ -5,13 +5,13 @@ import {
    HStack,
    IconButton,
    useDisclosure,
-   useColorModeValue,
    chakra,
 } from '@chakra-ui/react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link as NavItem } from 'react-router-dom';
 import { ColorModeSwitcher } from './../BtnModeColor/ColorModeSwitcher';
 import { nav_link_props } from './../../data/NavLink';
+import { useColor } from './../../hooks/useColor';
 //* Styles
 import styles from './styles.module.scss';
 
@@ -23,6 +23,7 @@ const NavLink = ({ children, path }) => (
 
 export const NavBar = () => {
    const { isOpen, onOpen, onClose } = useDisclosure();
+   const { background__navbar } = useColor();
 
    const navItem = () => {
       return nav_link_props.map(link => (
@@ -33,7 +34,7 @@ export const NavBar = () => {
    };
 
    return (
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={background__navbar} shadow={'dark-lg'} px={4}>
          <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
             <IconButton
                size={'md'}

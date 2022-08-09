@@ -12,7 +12,9 @@ import Image11 from './../assets/image_11.jpg';
 import Image12 from './../assets/image13.jpg';
 import Image13 from './../assets/image14.jpg';
 import Banner from './../assets/banner.jpg';
+import Banner2 from './../assets/product_4.jpg';
 import Banner3 from './../assets/banner_3.jpg';
+
 
 export {
    Image1,
@@ -29,5 +31,6 @@ export {
    Image12,
    Image13,
    Banner,
+   Banner2,
    Banner3
 };
