@@ -18,7 +18,7 @@ import styles from './styles.module.scss';
 
 const Contact = () => {
    const icons = <SiWhatsapp />;
-   const link = 'https://web.whatsapp.com/';
+   const link = 'https://wa.me/5511959562790';
 
    const getLink = () => window.open(link);
 

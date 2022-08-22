@@ -1,16 +1,16 @@
 import { Box, Heading, Text, useBreakpointValue } from '@chakra-ui/react';
 import { NavBar } from './../../components/Navigation/NavBar';
-import { Carousel } from '../../components/Carousel/Carousel';
 import { CardCarousel } from './../../components/Card/CardCarousel';
 import { ProductList } from './../../components/Product/ProductList';
 import { StatsDescription } from './../../components/Statics/Statics';
 import { Footer } from './../../components/Footer/Footer';
+import { HeroProduct } from './../../components/Hero/HeroProduct';
 
 const Product = () => {
    return (
       <section>
          <NavBar />
-         <Carousel />
+         <HeroProduct />
          <Box align={'center'}>
             <Heading
                fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}

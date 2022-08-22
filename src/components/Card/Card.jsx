@@ -12,9 +12,9 @@ export const Card = ({ name, image, price }) => {
       <Box
          role={'group'}
          p={6}
-         maxW={'330px'}
+         maxW={'30rem'}
          w={'full'}
-         bg={useColorModeValue('white', 'orange.800')}
+         bg={useColorModeValue('gray.200', 'orange.800')}
          boxShadow={'2xl'}
          rounded={'lg'}
          pos={'relative'}
@@ -25,7 +25,7 @@ export const Card = ({ name, image, price }) => {
             rounded={'lg'}
             mt={-12}
             pos={'relative'}
-            height={'230px'}
+            height={'15rem'}
             _after={{
                transition: 'all .3s ease',
                content: '""',

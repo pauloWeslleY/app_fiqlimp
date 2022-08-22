@@ -9,11 +9,11 @@ export const nav_link_props = [
       name: "Product",
       path: "product"
    },
-   {
-      id: "services",
-      name: "Services",
-      path: "services"
-   },
+   // {
+   //    id: "services",
+   //    name: "Services",
+   //    path: "services"
+   // },
    {
       id: "about",
       name: "About",
