@@ -1,27 +1,26 @@
-import { Slide, Slider } from './../Slider/index';
+import { Slide, Slider } from '../Slider/index';
 import { Card } from './Card';
-import { products } from './../../data/product_mock';
+import { products } from '../../data/product_mock';
 
 export const CardCarousel = () => {
    // const cards = products.length < 3 ? products.length : 3;
 
-   // if (products.length === 1) {
-   //    return <Card />;
-   // }
+   if (products.length === 1) {
+      return <Card />;
+   }
 
    const settings = {
       spaceBetween: 50,
-      navigation: 3,
-      pagination: {
+      navigation: products.length >= 3,
+      pagination: products.length >= 3 && {
          clickable: true,
       },
-      draggable: 3,
-      loop: 3,
-
+      draggable: products.length >= 3,
+      loop: products.length >= 3,
       //! Responsive breakpoints
       breakpoints: {
          //[] when window width is >= 320px
-         320: {
+         300: {
             slidesPerView: 1,
             navigation: false,
             slidesPerGroup: 1,

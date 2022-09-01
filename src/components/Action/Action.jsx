@@ -38,7 +38,9 @@ export const Action = () => {
                   }}
                   mb={6}
                >
-                  <chakra.span display={'block'}>Ready to dive in?</chakra.span>
+                  <chakra.span display={'block'}>
+                     Are you looking for cleaning products?
+                  </chakra.span>
                   <chakra.span
                      display={'block'}
                      color={'gray.500'}
@@ -46,7 +48,7 @@ export const Action = () => {
                         color: 'orange.400',
                      }}
                   >
-                     Start your free trial today.
+                     You can find it here in the Fiq Limp app.
                   </chakra.span>
                </chakra.span>
             </Box>

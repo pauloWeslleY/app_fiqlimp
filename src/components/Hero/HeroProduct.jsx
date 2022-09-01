@@ -28,11 +28,11 @@ export const HeroProduct = () => {
                         zIndex: -1,
                      }}
                   >
-                     App FiqLimp
+                     Cleaning Products and
                   </Text>
                   <br />{' '}
                   <Text color={'orange.400'} as={'span'}>
-                     Product in All
+                     Personal Hygiene
                   </Text>{' '}
                </Heading>
                <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>

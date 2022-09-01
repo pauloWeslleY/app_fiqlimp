@@ -6,6 +6,8 @@ import { StatsDescription } from './../../components/Statics/Statics';
 import { Footer } from './../../components/Footer/Footer';
 import { HeroProduct } from './../../components/Hero/HeroProduct';
 
+import styles from './styles.module.scss';
+
 const Product = () => {
    return (
       <section>
@@ -16,6 +18,7 @@ const Product = () => {
                fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
                py={'2rem'}
             >
+               <div className={styles.line__section}></div>
                <Text
                   as={'span'}
                   position={'relative'}

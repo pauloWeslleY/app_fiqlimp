@@ -36,14 +36,14 @@ export const MainList = () => {
          icon: SiGoogleanalytics,
          icon__bg: bg__icon_main_business,
          colors: 'yellow.500',
-         text: 'Business Planning',
+         text: 'Better Quality',
       },
       {
          id: 2,
          icon: SiBitcoin,
          icon__bg: bg__icon_main_financial,
          colors: 'grenn.500',
-         text: 'Financial Planning',
+         text: 'Best Price',
       },
       {
          id: 3,
