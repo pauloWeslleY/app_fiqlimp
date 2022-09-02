@@ -1,6 +1,6 @@
 import { Box, Heading, Text, useBreakpointValue } from '@chakra-ui/react';
 import { NavBar } from './../../components/Navigation/NavBar';
-import { CardCarousel } from './../../components/Card/CardCarousel';
+import { CardSlider } from './../../components/Card/CardCarousel';
 import { ProductList } from './../../components/Product/ProductList';
 import { StatsDescription } from './../../components/Statics/Statics';
 import { Footer } from './../../components/Footer/Footer';
@@ -37,7 +37,7 @@ const Product = () => {
                </Text>
             </Heading>
          </Box>
-         <CardCarousel />
+         <CardSlider />
          <ProductList />
          <StatsDescription />
          <Footer />
